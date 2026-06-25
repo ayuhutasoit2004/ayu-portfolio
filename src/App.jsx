@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 const data = {
   name: "Ayu Hutasoit",
-  tagline: "Full Stack Developer & Computer Science Student",
+  tagline: "Product Management Intern & Informatics Student",
   location: "Siborongborong, North Sumatra, Indonesia",
   about:
     "A computer science student with a passion for software development. I have a strong foundation in programming, algorithms, and problem-solving skills, and I am motivated to continue developing these skills through hands-on experience.",
@@ -14,15 +14,14 @@ const data = {
   },
   experience: [
     {
-      role: "Full Stack Developer Intern",
-      company: "Zicare – PT. Jejaring Tiga Arta",
-      period: "June 5, 2026 – August 17, 2026",
+      role: "Product Management Intern",
+      company: "PT Jejaring Tiga Artha (Zi.Care) – Kota Jakarta, Indonesia",
+      period: "June 2026 – August 2026",
       points: [
-        "Developed and maintained web applications across frontend and backend systems.",
-        "Implemented application features based on business and user requirements.",
-        "Built responsive user interfaces and improved overall user experience.",
-        "Collaborated with team members to troubleshoot issues and deliver software solutions.",
-        "Performed testing, debugging, and deployment to ensure reliability and performance.",
+        "Supported healthcare software product development by gathering and documenting requirements, creating user stories and acceptance criteria.",
+        "Managed product backlogs in Jira and collaborated with developers and stakeholders to deliver product features.",
+        "Supported the development of healthcare software solutions by gathering and documenting product requirements.",
+        "Coordinating with cross-functional teams and contributing to the successful delivery of product features.",
       ],
     },
     {
@@ -37,21 +36,23 @@ const data = {
   ],
   education: [
     {
-      degree: "Bachelor of S1 Informatika (GPA 2.90/4.00)",
+      degree: "Bachelor of S1 Informatika (GPA 2.96/4.00)",
       institution: "Institut Teknologi Del – Laguboti, Indonesia",
       period: "Aug 2023 – Sep 2027 (Expected)",
     },
   ],
   organizations: [
     {
-      role: "Secretary",
-      org: "General Election Commission (BEM IT Del)",
+      role: "Department Secretary",
+      org: "Student Executive Board (BEM) – Public Relations & Community Service Dept, Institut Teknologi Del",
       period: "Feb 2026 – Present",
+      desc: "Manages department administration, documentation, and correspondence, while supporting effective coordination of organizational and community service programs.",
     },
     {
-      role: "Department Secretary",
-      org: "General Election Commission (BEM IT Del)",
-      period: "Sep 2025 – Jan 2026",
+      role: "Deputy Department Secretary",
+      org: "Student Executive Board (BEM) – Public Relations & Community Service Dept, Institut Teknologi Del",
+      period: "Sep 2024 – Jan 2026",
+      desc: "",
     },
   ],
   skills: {
@@ -64,7 +65,7 @@ const data = {
     ],
     soft: ["Analytical Thinking", "Problem Solving", "Communication", "Team Collaboration"],
     languages: ["English (Fluent)", "Indonesian (Native)"],
-    interests: ["Front-End Development", "Quality Assurance & Software Testing"],
+    interests: ["Product-oriented Software Engineer", "Frontend Development", "Quality Assurance & Software Testing"],
   },
   achievements: [
     {
@@ -768,6 +769,14 @@ function Hero() {
             </svg>
             Email Me
           </a>
+          <a href="/cv-ayu-hutasoit.pdf" download="CV_Ayu_Hutasoit.pdf" className="btn-primary">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </a>
           <a href={data.contact.linkedin} target="_blank" rel="noreferrer" className="btn-primary">
             LinkedIn
           </a>
@@ -865,6 +874,7 @@ function Experience() {
                   <div style={styles.timelineRole}>{org.role}</div>
                   <div style={styles.timelineCompany}>{org.org}</div>
                   <div style={styles.timelinePeriod}>{org.period}</div>
+                  {org.desc ? <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.88rem", color: "#6B4D57", lineHeight: 1.6 }}>{org.desc}</p> : null}
                 </div>
               ))}
             </div>
