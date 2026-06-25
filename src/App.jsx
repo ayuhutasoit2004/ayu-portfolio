@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from "react";
 
 const data = {
   name: "Ayu Hutasoit",
-  tagline: "Product Management Intern & Informatics Student",
+  tagline: "Product Management, Quality Assurance (QA), Frontend Engineer (FE)",
   location: "Siborongborong, North Sumatra, Indonesia",
   about:
-    "A computer science student with a passion for software development. I have a strong foundation in programming, algorithms, and problem-solving skills, and I am motivated to continue developing these skills through hands-on experience.",
+    "An Informatics undergraduate student passionate about software development. Skilled in programming, algorithms, and problem-solving, with a strong willingness to learn and gain practical experience in developing innovative software solutions.",
   contact: {
     email: "ayuhutasoit3523@gmail.com",
     whatsapp: "https://wa.me/6281262985900",
@@ -19,9 +19,6 @@ const data = {
       period: "June 2026 – August 2026",
       points: [
         "Supported healthcare software product development by gathering and documenting requirements, creating user stories and acceptance criteria.",
-        "Managed product backlogs in Jira and collaborated with developers and stakeholders to deliver product features.",
-        "Supported the development of healthcare software solutions by gathering and documenting product requirements.",
-        "Coordinating with cross-functional teams and contributing to the successful delivery of product features.",
       ],
     },
     {
@@ -57,7 +54,7 @@ const data = {
   ],
   skills: {
     hard: [
-      { label: "Languages", items: ["JavaScript", "TypeScript", "Python", "Java", "Kotlin", "PHP", "C", "SQL"] },
+      { label: "Languages", items: ["JavaScript", "Python", "Java", "Kotlin", "PHP", "C", "SQL"] },
       { label: "Mobile", items: ["Kotlin", "Flutter", "Jetpack Compose", "MVVM", "Retrofit", "REST API"] },
       { label: "Web", items: ["React.js", "Node.js", "Laravel", "Inertia.js", "Tailwind CSS", "Bootstrap", "HTML", "CSS"] },
       { label: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "MariaDB"] },
