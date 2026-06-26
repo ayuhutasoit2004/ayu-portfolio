@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 const data = {
   name: "Ayu Hutasoit",
-  tagline: "Product Management, Quality Assurance (QA), Frontend Engineer (FE)",
+  tagline: "Informatics Student",
   location: "Siborongborong, North Sumatra, Indonesia",
   about:
     "An Informatics undergraduate student passionate about software development. Skilled in programming, algorithms, and problem-solving, with a strong willingness to learn and gain practical experience in developing innovative software solutions.",
@@ -18,7 +18,8 @@ const data = {
       company: "PT Jejaring Tiga Artha (Zi.Care) – Kota Jakarta, Indonesia",
       period: "June 2026 – August 2026",
       points: [
-        "Supported healthcare software product development by gathering and documenting requirements, creating user stories and acceptance criteria.",
+        "Supported the development of healthcare software solutions by gathering and documenting product requirements.",
+        "Coordinating with cross-functional teams and contributing to the successful delivery of product features.",
       ],
     },
     {
@@ -55,14 +56,14 @@ const data = {
   skills: {
     hard: [
       { label: "Languages", items: ["JavaScript", "Python", "Java", "Kotlin", "PHP", "C", "SQL"] },
-      { label: "Mobile", items: ["Kotlin", "Flutter", "Jetpack Compose", "MVVM", "Retrofit", "REST API"] },
-      { label: "Web", items: ["React.js", "Node.js", "Laravel", "Inertia.js", "Tailwind CSS", "Bootstrap", "HTML", "CSS"] },
+      { label: "Mobile", items: ["Kotlin", "Flutter", "Android Jetpack (Compose, ViewModel)", "MVVM Architecture", "Retrofit", "REST API"] },
+      { label: "Web", items: ["React.js", "Node.js", "Laravel", "Inertia.js", "Tailwind CSS", "Bootstrap", "HTML", "CSS", "RESTful API", "Authentication (JWT)"] },
       { label: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "MariaDB"] },
-      { label: "Tools", items: ["Git & GitHub", "Docker", "Postman", "Figma", "VS Code", "Android Studio"] },
+      { label: "Tools", items: ["Git & GitHub", "Docker", "Postman", "Figma", "VS Code", "IntelliJ IDEA", "Android Studio", "Maestro"] },
     ],
     soft: ["Analytical Thinking", "Problem Solving", "Communication", "Team Collaboration"],
     languages: ["English (Fluent)", "Indonesian (Native)"],
-    interests: ["Product-oriented Software Engineer", "Frontend Development", "Quality Assurance & Software Testing"],
+    interests: ["Product Management", "Quality Assurance (QA)", "Frontend Engineer (FE)"],
   },
   achievements: [
     {
@@ -743,6 +744,9 @@ function Hero() {
           <span style={styles.heroNameAccent}>Hutasoit</span>
         </h1>
         <p style={styles.heroTagline}>{data.tagline}</p>
+        <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.88rem", color: "#C9869A", marginBottom: 28, letterSpacing: "0.04em" }}>
+          {data.skills.interests.join("  ·  ")}
+        </p>
         <div style={styles.heroLocation}>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={C.rose} strokeWidth="2">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
